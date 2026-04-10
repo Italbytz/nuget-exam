@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+    <PackageId>Italbytz.Exam.Abstractions</PackageId>
+    <Description>Core exam and task contracts for the Italbytz package family.</Description>
+  </PropertyGroup>
+
+</Project>
