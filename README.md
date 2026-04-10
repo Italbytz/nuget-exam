@@ -43,6 +43,8 @@ API documentation is generated with `docfx` and can be published via GitHub Page
 
 - `https://italbytz.github.io/nuget-exam/`
 
+The doc site now also includes short guides for the exam/trivia question model and the first reusable networking and operating-systems quiz catalogs.
+
 ## Quality checks
 
 This repository includes:

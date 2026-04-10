@@ -1,4 +1,10 @@
 - name: Home
   href: index.md
+- name: Guides
+  items:
+    - name: Question models
+      href: docs/question-models.md
+    - name: Quiz catalogs
+      href: docs/quiz-catalogs.md
 - name: API
   href: api/
