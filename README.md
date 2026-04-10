@@ -43,6 +43,12 @@ This repository includes:
 - automated `restore`, `build`, `test`, `pack`, and docs generation
 - a `docfx` setup under `docfx/`
 
+## Release model
+
+- the current `nuget-exam` line stays on `1.0.0-preview.*` while higher-level exam composition packages are still pending
+- a pushed tag such as `v1.0.0-preview.1` triggers the release-ready pipeline in GitHub Actions
+- if the repository secret `NUGET_API_KEY` is configured, the workflow also publishes `.nupkg` and `.snupkg` files to NuGet
+
 ## Local validation
 
 ```bash
