@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Italbytz.Exam.Trivia.Abstractions\Italbytz.Exam.Trivia.Abstractions.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <PackageId>Italbytz.Exam.Networking</PackageId>
+    <Description>Networking-focused exam and quiz composition helpers.</Description>
+  </PropertyGroup>
+
+</Project>

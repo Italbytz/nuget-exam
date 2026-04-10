@@ -1,5 +1,7 @@
 ﻿using Italbytz.Exam.Abstractions;
 using Italbytz.Exam.Trivia.Abstractions;
+using NetworkingQuiz = Italbytz.Exam.Networking.YesNoQuestions;
+using OperatingSystemsQuiz = Italbytz.Exam.OperatingSystems.YesNoQuestions;
 
 namespace Italbytz.Exam.Tests;
 
@@ -48,6 +50,34 @@ public sealed class ExamContractsTests
         Assert.AreEqual(Choices.Multiple, question.ChoicesType);
         Assert.AreEqual(Difficulty.Medium, question.Difficulty);
         Assert.AreEqual(0, question.CorrectAnswerIndex);
+    }
+
+    [TestMethod]
+    public void Networking_quiz_exposes_expected_yes_no_questions()
+    {
+        var questions = NetworkingQuiz.Questions;
+
+        Assert.HasCount(14, questions);
+        Assert.AreEqual("Networking", questions[0].Category);
+        Assert.AreEqual(Choices.Boolean, questions[0].ChoicesType);
+        Assert.AreEqual(Difficulty.Medium, questions[0].Difficulty);
+        Assert.AreEqual("Die Mindestlänge von Rahmen dient dazu, Kollisionen erkennen zu können.", questions[0].Text);
+        Assert.IsTrue(((IYesNoQuestion)questions[0]).Answer);
+        Assert.IsNotNull(questions[2].AlternativeQuestion);
+    }
+
+    [TestMethod]
+    public void Operating_systems_quiz_exposes_expected_yes_no_questions()
+    {
+        var questions = OperatingSystemsQuiz.Questions;
+
+        Assert.HasCount(17, questions);
+        Assert.AreEqual("Operating Systems", questions[0].Category);
+        Assert.AreEqual(Choices.Boolean, questions[0].ChoicesType);
+        Assert.AreEqual(Difficulty.Medium, questions[0].Difficulty);
+        Assert.AreEqual("Die MMU übersetzt beim Paging logische Speicheradressen mit der Seitentabelle in physische Adressen.", questions[0].Text);
+        Assert.IsTrue(((IYesNoQuestion)questions[0]).Answer);
+        Assert.IsNotNull(questions[7].AlternativeQuestion);
     }
 
     private sealed class DummyExam : IExam
