@@ -4,38 +4,12 @@
 
 It is intended for developers who need reusable contracts for exam sheets, tasks, task text generation, and trivia-style question models.
 
-## Current migration status
-
-The current Phase 3 waves now include:
-
-- `Italbytz.Exam.Abstractions`
-- `Italbytz.Exam.Trivia.Abstractions`
-- `Italbytz.Exam.Networking`
-- `Italbytz.Exam.OperatingSystems`
-
-This means the repo now provides both the shared exam/trivia contracts and the first reusable domain-specific quiz catalogs for networking and operating systems.
-
 ## Which package should I use?
 
 - Use `Italbytz.Exam.Abstractions` for core contracts such as `IExam`, `ITask`, `ITaskText`, `ITaskTextGenerator`, `IExamExporter`, and `IStepwiseSolution`.
 - Use `Italbytz.Exam.Trivia.Abstractions` for question-model contracts such as `IQuestion`, `IMultipleChoiceQuestion`, `IYesNoQuestion`, `Difficulty`, `Choices`, and `QuestionType`.
 - Use `Italbytz.Exam.Networking` for reusable networking-oriented true/false quiz catalogs.
 - Use `Italbytz.Exam.OperatingSystems` for reusable operating-systems-oriented true/false quiz catalogs.
-
-## Migration notice
-
-Older repositories and articles may still refer to names such as:
-
-- `Italbytz.Ports.Exam`
-- `Italbytz.Ports.Trivia`
-- `Italbytz.Adapters.Exam.Networks`
-- `Italbytz.Adapters.Exam.OperatingSystems`
-- `nuget-ports-exam`
-- `nuget-ports-trivia`
-- `nuget-adapters-exam-networks`
-- `nuget-adapters-exam-operating-systems`
-
-For all new development, please use the new `Italbytz.Exam.*` package names.
 
 ## Documentation
 
