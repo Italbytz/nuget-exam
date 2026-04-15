@@ -20,6 +20,7 @@
     <ProjectReference Include="..\..\src\Italbytz.Exam.Trivia.Abstractions\Italbytz.Exam.Trivia.Abstractions.csproj" />
     <ProjectReference Include="..\..\src\Italbytz.Exam.Networking\Italbytz.Exam.Networking.csproj" />
     <ProjectReference Include="..\..\src\Italbytz.Exam.OperatingSystems\Italbytz.Exam.OperatingSystems.csproj" />
+    <ProjectReference Include="..\..\src\Italbytz.Exam.OpenTriviaDb\Italbytz.Exam.OpenTriviaDb.csproj" />
   </ItemGroup>
 
 </Project>

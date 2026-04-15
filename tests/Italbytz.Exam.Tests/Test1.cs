@@ -1,4 +1,5 @@
 ﻿using Italbytz.Exam.Abstractions;
+using Italbytz.Exam.OpenTriviaDb;
 using Italbytz.Exam.Trivia.Abstractions;
 using NetworkingQuiz = Italbytz.Exam.Networking.YesNoQuestions;
 using OperatingSystemsQuiz = Italbytz.Exam.OperatingSystems.YesNoQuestions;
@@ -79,6 +80,73 @@ public sealed class ExamContractsTests
         Assert.IsTrue(((IYesNoQuestion)questions[0]).Answer);
         Assert.IsNotNull(questions[7].AlternativeQuestion);
     }
+
+        [TestMethod]
+        public void Open_trivia_db_boolean_payload_maps_to_yes_no_question()
+        {
+                const string payload = """
+                {
+                    "response_code": 0,
+                    "results": [
+                        {
+                            "category": "Entertainment: Film",
+                            "type": "boolean",
+                            "difficulty": "easy",
+                            "question": "The movie &quot;Alien&quot; was directed by James Cameron.",
+                            "correct_answer": "False",
+                            "incorrect_answers": ["True"]
+                        }
+                    ]
+                }
+                """;
+
+                var result = OpenTriviaDbClient.ParseQuestions(payload);
+
+                Assert.AreEqual(OpenTriviaDbResponseCode.Success, result.ResponseCode);
+                Assert.HasCount(1, result.Questions);
+                Assert.IsInstanceOfType<IYesNoQuestion>(result.Questions[0]);
+                Assert.AreEqual("The movie \"Alien\" was directed by James Cameron.", result.Questions[0].Text);
+                Assert.IsFalse(((IYesNoQuestion)result.Questions[0]).Answer);
+        }
+
+        [TestMethod]
+        public void Open_trivia_db_multiple_choice_payload_maps_to_multiple_choice_question()
+        {
+                const string payload = """
+                {
+                    "response_code": 0,
+                    "results": [
+                        {
+                            "category": "Science &amp; Nature",
+                            "type": "multiple",
+                            "difficulty": "medium",
+                            "question": "What is the chemical symbol for silver?",
+                            "correct_answer": "Ag",
+                            "incorrect_answers": ["Au", "S", "Si"]
+                        }
+                    ]
+                }
+                """;
+
+                var result = OpenTriviaDbClient.ParseQuestions(payload);
+
+                Assert.AreEqual(OpenTriviaDbResponseCode.Success, result.ResponseCode);
+                Assert.HasCount(1, result.Questions);
+                Assert.IsInstanceOfType<IMultipleChoiceQuestion>(result.Questions[0]);
+
+                var question = (IMultipleChoiceQuestion)result.Questions[0];
+                CollectionAssert.AreEquivalent(new[] { "Ag", "Au", "S", "Si" }, question.PossibleAnswers);
+                Assert.AreEqual("Ag", question.PossibleAnswers[question.CorrectAnswerIndex]);
+                Assert.AreEqual("Science & Nature", question.Category);
+        }
+
+            [TestMethod]
+            public void Open_trivia_db_category_constants_match_api_ids()
+            {
+                Assert.AreEqual(11, OpenTriviaDbCategories.EntertainmentFilm);
+                Assert.AreEqual(15, OpenTriviaDbCategories.EntertainmentVideoGames);
+                Assert.AreEqual(17, OpenTriviaDbCategories.ScienceNature);
+            }
 
     private sealed class DummyExam : IExam
     {

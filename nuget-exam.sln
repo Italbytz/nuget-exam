@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Italbytz.Exam.Networking", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Italbytz.Exam.OperatingSystems", "src\Italbytz.Exam.OperatingSystems\Italbytz.Exam.OperatingSystems.csproj", "{FC0E9647-0B77-42FF-B3AC-4D8C36A4D5F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Italbytz.Exam.OpenTriviaDb", "src\Italbytz.Exam.OpenTriviaDb\Italbytz.Exam.OpenTriviaDb.csproj", "{5AE35E19-D768-46B8-BACF-3CF3A3B00E69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,18 @@ Global
 		{FC0E9647-0B77-42FF-B3AC-4D8C36A4D5F3}.Release|x64.Build.0 = Release|Any CPU
 		{FC0E9647-0B77-42FF-B3AC-4D8C36A4D5F3}.Release|x86.ActiveCfg = Release|Any CPU
 		{FC0E9647-0B77-42FF-B3AC-4D8C36A4D5F3}.Release|x86.Build.0 = Release|Any CPU
+		{5AE35E19-D768-46B8-BACF-3CF3A3B00E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE35E19-D768-46B8-BACF-3CF3A3B00E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE35E19-D768-46B8-BACF-3CF3A3B00E69}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5AE35E19-D768-46B8-BACF-3CF3A3B00E69}.Debug|x64.Build.0 = Debug|Any CPU
+		{5AE35E19-D768-46B8-BACF-3CF3A3B00E69}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5AE35E19-D768-46B8-BACF-3CF3A3B00E69}.Debug|x86.Build.0 = Debug|Any CPU
+		{5AE35E19-D768-46B8-BACF-3CF3A3B00E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE35E19-D768-46B8-BACF-3CF3A3B00E69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE35E19-D768-46B8-BACF-3CF3A3B00E69}.Release|x64.ActiveCfg = Release|Any CPU
+		{5AE35E19-D768-46B8-BACF-3CF3A3B00E69}.Release|x64.Build.0 = Release|Any CPU
+		{5AE35E19-D768-46B8-BACF-3CF3A3B00E69}.Release|x86.ActiveCfg = Release|Any CPU
+		{5AE35E19-D768-46B8-BACF-3CF3A3B00E69}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,5 +111,6 @@ Global
 		{2297220C-906F-4631-BA41-5C64E380DCF6} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 		{E0DE3D70-197F-457A-ABB7-3DDA3DC93898} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{FC0E9647-0B77-42FF-B3AC-4D8C36A4D5F3} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{5AE35E19-D768-46B8-BACF-3CF3A3B00E69} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 	EndGlobalSection
 EndGlobal

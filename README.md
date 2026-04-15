@@ -12,6 +12,7 @@ It is intended for developers who need reusable contracts for exam sheets, tasks
 - Use `Italbytz.Exam.Trivia.Abstractions` for question-model contracts such as `IQuestion`, `IMultipleChoiceQuestion`, `IYesNoQuestion`, `Difficulty`, `Choices`, and `QuestionType`.
 - Use `Italbytz.Exam.Networking` for reusable networking-oriented true/false quiz catalogs.
 - Use `Italbytz.Exam.OperatingSystems` for reusable operating-systems-oriented true/false quiz catalogs.
+- Use `Italbytz.Exam.OpenTriviaDb` for Open Trivia DB requests, token handling, category IDs, and mapping external JSON payloads to the shared trivia question model.
 
 ## Documentation
 
