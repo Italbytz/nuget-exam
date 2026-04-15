@@ -143,9 +143,14 @@ public sealed class ExamContractsTests
             [TestMethod]
             public void Open_trivia_db_category_constants_match_api_ids()
             {
-                Assert.AreEqual(11, OpenTriviaDbCategories.EntertainmentFilm);
-                Assert.AreEqual(15, OpenTriviaDbCategories.EntertainmentVideoGames);
-                Assert.AreEqual(17, OpenTriviaDbCategories.ScienceNature);
+                var categoryIds = new[]
+                {
+                    OpenTriviaDbCategories.EntertainmentFilm,
+                    OpenTriviaDbCategories.EntertainmentVideoGames,
+                    OpenTriviaDbCategories.ScienceNature
+                };
+
+                CollectionAssert.AreEqual(new[] { 11, 15, 17 }, categoryIds);
             }
 
     private sealed class DummyExam : IExam
