@@ -2,19 +2,19 @@
 
 [![Documentation](https://img.shields.io/badge/Documentation-GitHub%20Pages-blue?style=for-the-badge)](https://italbytz.github.io/nuget-exam/)
 
-`nuget-exam` bundles the refactored `Italbytz.Exam.*` and `Italbytz.Exam.Trivia.*` package families.
+`nuget-exam` bundles the refactored `Italbytz.Exam.*` package family and builds on the reusable `Italbytz.Trivia.*` packages.
 
-It is intended for developers who need reusable contracts for exam sheets, tasks, task text generation, and trivia-style question models.
+It is intended for developers who need reusable contracts for exam sheets, tasks, task text generation, and domain-specific quiz catalogs built on shared trivia question models.
 
 The next planned slice is a shared exercise pipeline for generated tasks and demonstrations so that multiple front ends can consume the same text building blocks, solver outputs, and step traces.
 
 ## Which package should I use?
 
 - Use `Italbytz.Exam.Abstractions` for core contracts such as `IExam`, `ITask`, `ITaskText`, `ITaskTextGenerator`, `IExamExporter`, and `IStepwiseSolution`.
-- Use `Italbytz.Exam.Trivia.Abstractions` for question-model contracts such as `IQuestion`, `IMultipleChoiceQuestion`, `IYesNoQuestion`, `Difficulty`, `Choices`, and `QuestionType`.
+- Use `Italbytz.Trivia.Abstractions` for question-model contracts such as `IQuestion`, `IMultipleChoiceQuestion`, `IYesNoQuestion`, `Difficulty`, `Choices`, and `QuestionType`.
 - Use `Italbytz.Exam.Networking` for reusable networking-oriented true/false quiz catalogs.
 - Use `Italbytz.Exam.OperatingSystems` for reusable operating-systems-oriented true/false quiz catalogs.
-- Use `Italbytz.Exam.OpenTriviaDb` for Open Trivia DB requests, token handling, category IDs, and mapping external JSON payloads to the shared trivia question model.
+- Use `Italbytz.Trivia.OpenTriviaDb` for Open Trivia DB requests, token handling, category IDs, and mapping external JSON payloads to the shared trivia question model.
 
 ## Documentation
 
@@ -37,7 +37,7 @@ This repository includes:
 ## Release model
 
 - the current `nuget-exam` line stays on `1.0.0-preview.*` while higher-level exam composition packages are still pending
-- a pushed tag such as `v1.0.0-preview.1` triggers the release-ready pipeline in GitHub Actions
+- a pushed tag such as `v1.0.0-preview.3` triggers the release-ready pipeline in GitHub Actions
 - if the repository secret `NUGET_API_KEY` is configured, the workflow also publishes `.nupkg` and `.snupkg` files to NuGet
 
 ## Local validation

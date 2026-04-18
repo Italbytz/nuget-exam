@@ -1,15 +1,16 @@
 # nuget-exam
 
-`nuget-exam` is the target repository for refactored `Italbytz.Exam.*` and `Italbytz.Exam.Trivia.*` packages.
+`nuget-exam` is the target repository for refactored `Italbytz.Exam.*` packages that build on the reusable `Italbytz.Trivia.*` family.
 
 ## Current Phase 3 slice
 
 - `Italbytz.Exam.Abstractions`
-- `Italbytz.Exam.Trivia.Abstractions`
+- `Italbytz.Trivia.Abstractions`
+- `Italbytz.Trivia.OpenTriviaDb`
 - `Italbytz.Exam.Networking`
 - `Italbytz.Exam.OperatingSystems`
 
-The migrated abstractions cover exam metadata, tasks, task text generation, and trivia-style question models, while the first catalog packages add reusable true/false question sets for networking and operating systems.
+The migrated abstractions cover exam metadata, tasks, and task text generation, while the shared trivia family provides reusable question models and Open Trivia DB access. The first catalog packages add reusable true/false question sets for networking and operating systems.
 
 ## Guides
 
