@@ -73,7 +73,7 @@ public sealed class ExercisePipelineContractsTests
                 ReferenceRequests = [7, 0, 1],
                 FinalFrames =
                 [
-                    new PageReplacementFrameState { Slot = 0, Page = 7, ReferenceBit = true, IsPointerSlot = true }
+                    new PageReplacementFrameState { Slot = 0, Page = "7", ReferenceBit = "1", IsPointerSlot = true }
                 ],
                 PageFaultCount = 3
             },
@@ -87,7 +87,7 @@ public sealed class ExercisePipelineContractsTests
                         StepIndex = 0,
                         RequestedPage = 7,
                         IsPageFault = true,
-                        Frames = [new PageReplacementFrameState { Slot = 0, Page = 7 }],
+                        Frames = [new PageReplacementFrameState { Slot = 0, Page = "7" }],
                         Explanation = "Leerer Rahmen wird belegt."
                     }
                 ]
