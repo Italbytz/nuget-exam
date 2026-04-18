@@ -16,7 +16,7 @@ Important types include:
 
 ## Trivia question contracts
 
-Use `Italbytz.Exam.Trivia.Abstractions` when you need a reusable question model.
+Use `Italbytz.Trivia.Abstractions` when you need a reusable question model.
 
 Important types include:
 
@@ -31,7 +31,7 @@ A question can also reference an `AlternativeQuestion`, which is useful for pair
 | Need | Package |
 | --- | --- |
 | exam sheets, tasks, exporters, and generated task text | `Italbytz.Exam.Abstractions` |
-| generic trivia question models | `Italbytz.Exam.Trivia.Abstractions` |
+| generic trivia question models | `Italbytz.Trivia.Abstractions` (nuget-trivia) |
 | ready-to-use networking question catalog | `Italbytz.Exam.Networking` |
 | ready-to-use operating-systems question catalog | `Italbytz.Exam.OperatingSystems` |
 
@@ -40,7 +40,7 @@ A question can also reference an `AlternativeQuestion`, which is useful for pair
 The consolidated packages replace the older structure as follows:
 
 - `Italbytz.Ports.Exam` → `Italbytz.Exam.Abstractions`
-- `Italbytz.Ports.Trivia` → `Italbytz.Exam.Trivia.Abstractions`
+- `Italbytz.Ports.Trivia` → `Italbytz.Trivia.Abstractions` (now in `nuget-trivia`)
 - domain-specific quiz adapters now live in `Italbytz.Exam.Networking` and `Italbytz.Exam.OperatingSystems`
 
 This keeps the original teaching use cases, but presents them under clearer and more reusable package names.

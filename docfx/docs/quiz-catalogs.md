@@ -9,13 +9,13 @@
 | `Italbytz.Exam.Networking` | networking-oriented true/false questions | `YesNoQuestions.Questions` |
 | `Italbytz.Exam.OperatingSystems` | operating-systems-oriented true/false questions | `YesNoQuestions.Questions` |
 
-These catalogs are built on top of `Italbytz.Exam.Trivia.Abstractions` and expose `IYesNoQuestion` objects with a category, difficulty, answer, and optional `AlternativeQuestion`.
+These catalogs depend on `Italbytz.Trivia.Abstractions` (from `nuget-trivia`) and expose `IYesNoQuestion` objects with a category, difficulty, answer, and optional `AlternativeQuestion`.
 
 ## Example usage
 
 ```csharp
 using Italbytz.Exam.Networking;
-using Italbytz.Exam.Trivia.Abstractions;
+using Italbytz.Trivia.Abstractions;
 
 foreach (IYesNoQuestion question in YesNoQuestions.Questions)
 {

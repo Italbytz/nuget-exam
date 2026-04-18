@@ -1,4 +1,4 @@
-using Italbytz.Exam.Trivia.Abstractions;
+using Italbytz.Trivia.Abstractions;
 
 namespace Italbytz.Exam.Networking;
 

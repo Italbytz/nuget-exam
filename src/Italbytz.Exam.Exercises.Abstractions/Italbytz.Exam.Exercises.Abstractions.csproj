@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+    <PackageId>Italbytz.Exam.Exercises.Abstractions</PackageId>
+    <Description>Shared semantic exercise contracts for multi-channel task generation and rendering.</Description>
+  </PropertyGroup>
+
+</Project>

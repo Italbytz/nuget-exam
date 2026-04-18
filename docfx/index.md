@@ -13,6 +13,7 @@ The migrated abstractions cover exam metadata, tasks, task text generation, and 
 
 ## Guides
 
+- `Guides > Shared exercise pipeline` outlines the next package slice for a renderer-neutral exercise model, shared solver traces, and multi-channel output.
 - `Guides > Question models` summarizes the shared abstractions for exams, tasks, and trivia questions.
 - `Guides > Quiz catalogs` shows how the first domain-specific true/false question sets are exposed in code.
 

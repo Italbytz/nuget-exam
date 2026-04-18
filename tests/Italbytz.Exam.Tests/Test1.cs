@@ -1,6 +1,6 @@
 ﻿using Italbytz.Exam.Abstractions;
-using Italbytz.Exam.OpenTriviaDb;
-using Italbytz.Exam.Trivia.Abstractions;
+using Italbytz.Trivia.Abstractions;
+using Italbytz.Trivia.OpenTriviaDb;
 using NetworkingQuiz = Italbytz.Exam.Networking.YesNoQuestions;
 using OperatingSystemsQuiz = Italbytz.Exam.OperatingSystems.YesNoQuestions;
 

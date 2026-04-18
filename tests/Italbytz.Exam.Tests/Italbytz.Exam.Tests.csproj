@@ -17,10 +17,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Italbytz.Exam.Abstractions\Italbytz.Exam.Abstractions.csproj" />
-    <ProjectReference Include="..\..\src\Italbytz.Exam.Trivia.Abstractions\Italbytz.Exam.Trivia.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\Italbytz.Exam.Exercises.Abstractions\Italbytz.Exam.Exercises.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\Italbytz.Exam.Exercises.Solver\Italbytz.Exam.Exercises.Solver.csproj" />
     <ProjectReference Include="..\..\src\Italbytz.Exam.Networking\Italbytz.Exam.Networking.csproj" />
     <ProjectReference Include="..\..\src\Italbytz.Exam.OperatingSystems\Italbytz.Exam.OperatingSystems.csproj" />
-    <ProjectReference Include="..\..\src\Italbytz.Exam.OpenTriviaDb\Italbytz.Exam.OpenTriviaDb.csproj" />
+    <PackageReference Include="Italbytz.Trivia.Abstractions" />
+    <PackageReference Include="Italbytz.Trivia.OpenTriviaDb" />
   </ItemGroup>
 
 </Project>

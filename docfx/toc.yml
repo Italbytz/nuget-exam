@@ -2,6 +2,8 @@
   href: index.md
 - name: Guides
   items:
+    - name: Shared exercise pipeline
+      href: docs/exercise-pipeline.md
     - name: Question models
       href: docs/question-models.md
     - name: Quiz catalogs

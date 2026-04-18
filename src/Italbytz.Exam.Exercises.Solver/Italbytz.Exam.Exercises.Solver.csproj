@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+    <PackageId>Italbytz.Exam.Exercises.Solver</PackageId>
+    <Description>Shared solver result and demonstration trace contracts for generated exercises.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Italbytz.Exam.Exercises.Abstractions\Italbytz.Exam.Exercises.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

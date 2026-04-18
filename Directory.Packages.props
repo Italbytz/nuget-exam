@@ -5,5 +5,7 @@
 
   <ItemGroup>
     <PackageVersion Include="MSTest" Version="4.0.1" />
+    <PackageVersion Include="Italbytz.Trivia.Abstractions" Version="1.0.0-preview.1" />
+    <PackageVersion Include="Italbytz.Trivia.OpenTriviaDb" Version="1.0.0-preview.1" />
   </ItemGroup>
 </Project>

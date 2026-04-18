@@ -6,6 +6,8 @@
 
 It is intended for developers who need reusable contracts for exam sheets, tasks, task text generation, and trivia-style question models.
 
+The next planned slice is a shared exercise pipeline for generated tasks and demonstrations so that multiple front ends can consume the same text building blocks, solver outputs, and step traces.
+
 ## Which package should I use?
 
 - Use `Italbytz.Exam.Abstractions` for core contracts such as `IExam`, `ITask`, `ITaskText`, `ITaskTextGenerator`, `IExamExporter`, and `IStepwiseSolution`.
@@ -21,6 +23,8 @@ API documentation is generated with `docfx` and can be published via GitHub Page
 - `https://italbytz.github.io/nuget-exam/`
 
 The doc site now also includes short guides for the exam/trivia question model and the first reusable networking and operating-systems quiz catalogs.
+
+An architecture note for a shared exercise pipeline is available in the guides section.
 
 ## Quality checks
 
