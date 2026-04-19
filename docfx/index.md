@@ -1,8 +1,10 @@
 # nuget-exam
 
-`nuget-exam` is the target repository for refactored `Italbytz.Exam.*` packages that build on the reusable `Italbytz.Trivia.*` family.
+`nuget-exam` provides reusable exam and quiz packages built on the shared `Italbytz.Exam.*` and `Italbytz.Trivia.*` families.
 
-## Current Phase 3 slice
+This documentation is intended for package consumers who want to build reusable exam sheets, tasks, and quiz catalogs on shared question models.
+
+## Packages at a glance
 
 - `Italbytz.Exam.Abstractions`
 - `Italbytz.Trivia.Abstractions`
@@ -10,13 +12,20 @@
 - `Italbytz.Exam.Networking`
 - `Italbytz.Exam.OperatingSystems`
 
-The migrated abstractions cover exam metadata, tasks, and task text generation, while the shared trivia family provides reusable question models and Open Trivia DB access. The first catalog packages add reusable true/false question sets for networking and operating systems.
+These packages cover exam metadata, tasks, task text generation, shared trivia question models, Open Trivia DB integration, and the first reusable quiz catalogs.
 
 ## Guides
 
-- `Guides > Shared exercise pipeline` outlines the next package slice for a renderer-neutral exercise model, shared solver traces, and multi-channel output.
 - `Guides > Question models` summarizes the shared abstractions for exams, tasks, and trivia questions.
 - `Guides > Quiz catalogs` shows how the first domain-specific true/false question sets are exposed in code.
+- `Guides > Shared exercise pipeline` gives architectural context for composing generated tasks and demonstrations.
+
+## Use nuget-exam if you want to
+
+- define exam and task contracts that stay independent of a single front end
+- reuse trivia-style question models across teaching, demo, and quiz scenarios
+- access the first networking and operating-systems question catalogs
+- navigate generated API documentation for the full package family
 
 ## Local validation
 

@@ -2,11 +2,9 @@
 
 [![Documentation](https://img.shields.io/badge/Documentation-GitHub%20Pages-blue?style=for-the-badge)](https://italbytz.github.io/nuget-exam/)
 
-`nuget-exam` bundles the refactored `Italbytz.Exam.*` package family and builds on the reusable `Italbytz.Trivia.*` packages.
+`nuget-exam` provides the `Italbytz.Exam.*` package family and builds on the reusable `Italbytz.Trivia.*` packages.
 
 It is intended for developers who need reusable contracts for exam sheets, tasks, task text generation, and domain-specific quiz catalogs built on shared trivia question models.
-
-The next planned slice is a shared exercise pipeline for generated tasks and demonstrations so that multiple front ends can consume the same text building blocks, solver outputs, and step traces.
 
 ## Which package should I use?
 
